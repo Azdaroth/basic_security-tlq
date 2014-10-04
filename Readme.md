@@ -20,6 +20,12 @@ If it is defined it will expect it to be an array of hashes in the form:
 For each rule, the specified ip address will be granted access to the
 specified port on the current node.
 
+
+You can also ports that will be always allowed (besided 80 and 22 which are allowed by default), just use array of ports:
+
+firewall_allowed_ports: ["443"]
+
+
 ## Root Login
 
 Root login is left as enabled. It's unclear what the benefit of
